@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f1e7" />
+    <meta name="description" content="Keepsake turns a message, a few photos, and a song into a tiny website made for one person." />
+    <title>Keepsake — tiny websites for big feelings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header shell">
+      <a class="brand" href="#top" aria-label="Keepsake home"><span class="brand-mark">✳</span> keepsake</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#templates">Templates</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#studio">Studio</a>
+      </nav>
+      <a class="button button-small button-dark" href="#studio">Make one <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A little corner of the internet, made for one person</p>
+          <h1>Make a tiny website for someone <em>you love.</em></h1>
+          <p class="hero-lede">Turn a message, a handful of favorite photos, and a song into a keepsake they can open whenever they need a little joy.</p>
+          <div class="hero-actions">
+            <a class="button button-coral" href="#studio">Start your keepsake <span>→</span></a>
+            <a class="text-link" href="#templates">See the templates <span>↓</span></a>
+          </div>
+          <div class="hero-meta"><span>Made in your browser</span><i></i><span>No design degree required</span></div>
+        </div>
+        <div class="hero-art" aria-label="Example keepsake preview">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="hero-note note-back"><span>for the little things</span></div>
+          <div class="hero-note note-front">
+            <div class="note-top"><span class="mini-label">A keepsake for</span><span class="sparkle">✦</span></div>
+            <h2>Elena<br /><i>&amp; Sam</i></h2>
+            <div class="note-line"></div>
+            <p>you are my favorite<br />place to be</p>
+            <div class="note-footer"><span>open when you miss me</span><span>♡</span></div>
+          </div>
+          <div class="floating-pill pill-one">✦ 12 tiny memories</div>
+          <div class="floating-pill pill-two">♫ your song</div>
+          <span class="hero-heart">♥</span>
+        </div>
+      </section>
+
+      <section class="proof-strip shell" aria-label="Keepsake highlights">
+        <div><strong>01</strong><span>Choose a feeling</span></div>
+        <div><strong>02</strong><span>Add your little things</span></div>
+        <div><strong>03</strong><span>Send one lovely link</span></div>
+        <div class="proof-note">A gift that feels like <em>you.</em></div>
+      </section>
+
+      <section class="templates section shell" id="templates">
+        <div class="section-heading">
+          <div><p class="eyebrow">Start with a mood</p><h2>Pick a page that<br /><em>feels like them.</em></h2></div>
+          <p class="section-intro">Each template is a starting point, not a box. Change the words, colors, photos, and little details until it sounds like the two of you.</p>
+        </div>
+        <div class="template-grid">
+          <article class="template-card template-rose" data-template="year">
+            <div class="template-art art-rose"><span class="stamp">the year<br />in us</span><span class="art-star">✦</span><span class="art-caption">12 months of<br /><i>little magic</i></span></div>
+            <div class="template-info"><div><span class="template-kicker">For a year worth remembering</span><h3>The Year in Us</h3></div><button class="round-arrow" aria-label="Use The Year in Us">↗</button></div>
+          </article>
+          <article class="template-card template-sky" data-template="note">
+            <div class="template-art art-sky"><span class="sky-sun">☼</span><span class="sky-title">open when<br /><i>you need a smile</i></span><span class="sky-postmark">sent with love<br />from me to you</span></div>
+            <div class="template-info"><div><span class="template-kicker">For the words you keep meaning to say</span><h3>Open When</h3></div><button class="round-arrow" aria-label="Use Open When">↗</button></div>
+          </article>
+          <article class="template-card template-lime" data-template="birthday">
+            <div class="template-art art-lime"><span class="lime-number">27</span><span class="lime-title">things i love<br /><i>about you</i></span><span class="lime-doodle">✳</span></div>
+            <div class="template-info"><div><span class="template-kicker">For their next trip around the sun</span><h3>Birthday List</h3></div><button class="round-arrow" aria-label="Use Birthday List">↗</button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="studio section shell" id="studio">
+        <div class="studio-heading"><p class="eyebrow">The keepsake studio</p><h2>Make it yours<br /><em>in a few minutes.</em></h2><p>Start with the basics. You can always come back and make the tiny details more personal.</p></div>
+        <div class="studio-layout">
+          <form class="studio-form" id="gift-form">
+            <div class="form-top"><span class="step-label">01 / 03</span><span class="autosave" id="save-status">Draft saved locally</span></div>
+            <label>Who is this for?<input id="recipient" name="recipient" placeholder="Their name" maxlength="32" value="Elena & Sam" /></label>
+            <label>What are you celebrating?<input id="occasion" name="occasion" placeholder="A birthday, a Tuesday..." maxlength="48" value="A year of little magic" /></label>
+            <label>Write a tiny note<textarea id="message" name="message" rows="4" maxlength="160">You are my favorite place to be. Here’s to all the ordinary days that became our best ones.</textarea></label>
+            <div class="form-row"><label>Choose a color<select id="accent" name="accent"><option value="coral">Sunset coral</option><option value="violet">Night violet</option><option value="teal">Sea glass</option><option value="yellow">Butter yellow</option></select></label><label>Add a song<input id="song" name="song" placeholder="Song title · Artist" maxlength="48" /></label></div>
+            <label class="upload-label"><span class="upload-icon">＋</span><span><strong>Add your favorite photos</strong><small>JPG or PNG · up to 5 images</small></span><input id="photos" type="file" accept="image/png,image/jpeg" multiple /></label>
+            <div class="form-actions"><button type="button" class="button button-dark" id="save-draft">Save draft</button><button type="submit" class="button button-coral">Create preview <span>↗</span></button></div>
+          </form>
+          <div class="live-preview-wrap"><div class="preview-label"><span>Live preview</span><span class="preview-device">phone / desktop</span></div><div class="live-preview" id="live-preview"><div class="preview-top"><span class="preview-dot"></span><span id="preview-occasion">A year of little magic</span><span>•••</span></div><div class="preview-photo" id="preview-photo"><span>♡</span><small>your photos go here</small></div><div class="preview-copy"><span class="preview-small">a keepsake for</span><h3 id="preview-recipient">Elena &amp; Sam</h3><p id="preview-message">You are my favorite place to be. Here’s to all the ordinary days that became our best ones.</p><div class="preview-song" id="preview-song">♫ add a song to make it yours</div><div class="preview-footer"><span>made with a lot of love</span><span>↗</span></div></div></div></div>
+        </div>
+      </section>
+
+      <section class="how section shell" id="how-it-works">
+        <div class="section-heading"><div><p class="eyebrow">No complicated setup</p><h2>Three tiny steps<br /><em>to something big.</em></h2></div></div>
+        <div class="steps"><div class="step"><span class="step-number">01</span><div class="step-icon">✦</div><h3>Choose your feeling</h3><p>Pick a page that fits the moment: nostalgic, playful, soft, or gloriously over the top.</p></div><div class="step"><span class="step-number">02</span><div class="step-icon">⌁</div><h3>Add the little things</h3><p>Write your note, drop in photos, and add the song that makes you think of them.</p></div><div class="step"><span class="step-number">03</span><div class="step-icon">↗</div><h3>Send one sweet link</h3><p>Share the preview directly. They can open it on any phone, whenever they need a smile.</p></div></div>
+      </section>
+
+      <section class="closing shell"><div class="closing-card"><span class="closing-spark">✳</span><p class="eyebrow">A little reminder</p><h2>The best gifts<br />feel like <em>inside jokes.</em></h2><a class="button button-light" href="#studio">Make your keepsake <span>→</span></a><span class="closing-doodle">♡</span></div></section>
+    </main>
+    <footer class="site-footer shell"><a class="brand" href="#top"><span class="brand-mark">✳</span> keepsake</a><span>For the people who make ordinary days feel golden.</span><span>© 2026 Keepsake Studio</span></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
